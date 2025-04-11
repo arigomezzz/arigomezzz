@@ -1,0 +1,568 @@
+.logo {
+    width: 600px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+}
+
+header,nav {
+    background: #86A788;
+    padding: 3px;
+    text-align: center;
+}
+
+nav a {
+    color: #53103b;
+    text-decoration: none;
+    padding: 12px;
+    background:  #FFE2E2;
+    margin: 10px;
+    transition: linear 0.2s;
+    display: inline-block;
+    font-family: 'Gill Sans';
+    font-size: 19px;
+    text-align: center;
+    font-weight: 550;
+    border-radius: 12px 28px;  
+}
+  
+nav a:hover {
+    color: #53103b;
+    background: #e1ffec;
+}
+
+
+body {
+    background: #FFFDEC;
+    margin: 0;
+}
+
+main {
+    /*Don't add any extra space above or below the main content area (0 margin top and bottom)
+    Add 150 pixels of space on both the left and right sides of the main content area
+    but then to change to smaller screens i did that in @media with auto*/ 
+    margin: 0 150px;
+}
+  
+main section:nth-child(odd) {
+    background: #FFE2E2;
+    color: #53103b;
+    border-radius: 5px;
+}
+
+#myprofile{
+    background-color:  #FFE2E2;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: auto 40px; 
+    height: auto 10px;
+    border-radius: 20px;
+    flex-direction: row;
+    align-items: center;
+}
+
+.sectionPic {
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: auto 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 22px;
+}
+
+.sectionText{
+    align-self: center;
+    text-align: center;
+}
+
+.sectionFont {
+    font-size: 32px;
+    text-align: center;
+    font-family: Georgia; 
+}
+
+a {
+    color: #881870;
+}
+
+#about-me {
+    background-color:  #FFFDEC;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin: 40px 40px; 
+    height: auto 10px;
+    border-radius: 50px;
+    border: 2px solid #881870;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 25px 0;
+    flex-direction: column;
+}
+  
+.about-image {
+    width: 400px;
+    height: auto;
+    border: 6px solid  #FFCFCF;
+    border-radius: 150px; 
+    align-items: center;
+}
+
+.mytitle {
+    color: #881870;
+    font-family:'Georgia';
+    font-size: 44px;
+    text-align: center;
+}
+
+.buttonContain {
+    /*inline-block allows the button container to flow inline with other content rather than forcing a line break before and after*/
+    /*inline-block makes sure the container only takes up as much horizontal space as needed for the button, 
+    rather than stretching across the full width of its parent element)*/
+    display:inline-block; 
+    padding: 5px 10px;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    /*top and then R+L*/
+    padding: 10px 15px;
+    font-size: 22px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+}
+
+.buttonColor {
+    background-color:  #FFE2E2; 
+    color: #881870;
+}
+
+.button:hover {
+    border: 2px solid #881870; 
+}
+
+.resume-icon {
+    width: 40px;
+    height: auto;
+}
+
+h1, h2 {
+    font-family:'Segoe UI';
+    font-size: 34px;
+    text-align: center;
+    color: #881870;
+}
+
+.box {
+    color: #53103b;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 340px;
+    border: 2px solid #881870; 
+    background-color: #FFE2E2;
+    /*maybe make the background lighter or a diff color idk */
+}
+
+.box div {
+    border-radius: 5px;
+    width: 200px;
+    height: 200px;
+    background-size: contain;
+    background-position: center;
+}
+
+.container { 
+    display: flex;
+    justify-content: center; /*makes it horiz center*/
+    align-items: center; /*makes verti center*/
+    gap: 20px; 
+}
+
+section {
+    padding: 20px;
+    margin-top: 30px;
+    align-items: center;
+}
+
+
+/*my projects*/
+#one {
+    background-image: url("arago.png");
+    width: 300px;
+}
+#two {
+    background-image: url("avp.png");
+    width: 300px;
+}
+#three {
+    background-image: url("ktp.jpeg");
+    width: 300px;
+}
+#four {
+    background-image: url("home4heels.jpg");
+    width: 300px;
+}
+#five {
+    background-image: url("ID8.png");
+    width: 300px;
+
+}
+
+/*target the div child within the id*/
+#projects > div {
+    display: flex;
+    /* flex items wrap onto multiple lines from top to bottom*/
+    flex-wrap: wrap;
+    /*just the gap in betweeb*/
+    gap: 10px;
+    align-items: center;
+}
+
+p {
+    font-size: 24px;
+    color:#881870;
+    font-family:'Lucida Sans';
+    text-align: center;
+}
+
+#contact {
+    margin: 40px 40px; 
+    height: auto 10px;
+}
+
+.contact-links {
+    padding: 0;
+    text-align: center;
+}
+
+/*change it so its not in the bullet form*/
+.contact-links li {
+    display: inline-block;
+    margin: 0 20px;
+}
+  
+/*this is the a links design*/
+.contact-links a {
+    text-decoration: none;
+    color: #881870;
+    font-size: 24px;
+    position: relative;
+}
+
+/*so now when i hover this happens*/
+.contact-links a:hover  {
+    color: #881870;
+    text-decoration: underline;
+}
+
+/*makes the icon images into cute little circles*/
+.contact-icon {
+    width: 30px;
+    height: 30px;
+    /*bc its not aligned so make the circles with text aligned*/
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+#top-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 40px;
+    height: 40px;
+    background: #86A788;
+    color: #fff5f5;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 12px;
+}
+
+footer p {
+    font-size: 24px;
+    color: #fff5f5;
+    font-family:'Lucida Sans';
+}
+.footer {
+    background-color: #86A788;
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+/*ligter pink #FFE2E2; 
+darker pink #FFCFCF; */
+
+/*big screen*/
+@media (max-width: 1920px) {
+     
+    nav a {
+        font-size: 18px;  
+    }
+
+   h1, h2 {
+        font-family:'Segoe UI';
+        font-size: 30px;
+        text-align: center;
+        color: #881870;
+    } 
+
+   .sectionText{
+        align-self: center;
+        text-align: center;
+    }
+
+    .sectionFont {
+        font-size: 30px;
+        text-align: center;
+        font-family: Georgia; 
+    }
+
+    .mytitle {
+        color: #881870;
+        font-family:'Georgia';
+        font-size: 35px;
+        text-align: center;
+    }
+
+    p {
+        font-size: 23px;
+    }
+
+    main {
+        margin: auto;
+    }
+    
+    #myprofile {
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .sectionPic {
+        width: 40%;
+        max-width: 350px; 
+    }
+    
+    .sectionText {
+        width: 60%;
+    }
+    .sectionPic {
+        width: 40%;
+        max-width: 350px; 
+    }
+    
+    .about-image {
+        width: 400px;
+        height: auto;
+        border: 6px solid  #FFCFCF;
+    }
+
+    .contact-links a {
+        font-size: 22px;
+    }
+
+    footer p {
+        font-size: 24px;
+    }
+
+    .contact-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    #top-button {
+        width: 35px;
+        height: 35px;
+        font-size: 18px;
+        line-height: 35px;
+    }
+   
+}
+
+/*medium screen*/
+@media (max-width: 1030px) {
+    nav a {
+        font-size: 17px;  
+    }
+
+    h1 , h2 {
+        font-family:'Segoe UI';
+        font-size: 25px;
+        text-align: center;
+        color: #881870;
+    }
+
+    .sectionText{
+        align-self: center;
+        text-align: center;
+    }
+    
+    .sectionFont {
+        font-size: 24px;
+        text-align: center;
+        font-family: Georgia; 
+    }
+    
+    .mytitle {
+        font-size: 30px;
+    }
+    p {
+        font-size: 20px;
+    }
+    main {
+        margin: auto;
+    }
+    .sectionPic {
+        width: 60%; 
+    }
+    .button {
+        padding: 8px 15px;
+        font-size: 18px;
+    }
+    .about-image {
+        width: 300px;
+        border: 4px solid  #FFCFCF;
+    }
+
+    .contact-links a {
+        font-size: 20px;
+    }
+
+    footer p {
+        font-size: 19px;
+    }
+
+    .contact-icon {
+        width: 25px;
+        height: 25px;
+    }
+
+    #top-button {
+        width: 30px;
+        height: 30px;
+        font-size: 17px;
+        line-height: 30px;
+    }
+    .resume-icon {
+        width: 35px;
+    }
+}
+
+/*small screen*/
+@media (max-width: 686px) {
+    nav a {
+        font-size: 16px;  
+    }
+
+    h1 , h2 {
+        font-family:'Segoe UI';
+        font-size: 19px;
+        text-align: center;
+        color: #881870;
+    }
+    
+    .sectionText{
+        align-self: center;
+        text-align: center;
+    }
+    
+    .sectionFont {
+        font-size: 19px;
+        text-align: center;
+        font-family: Georgia; 
+    }
+    
+    .mytitle {
+        color: #881870;
+        font-family:'Georgia';
+        font-size: 21px;
+        text-align: center;
+    }
+
+    p {
+        font-size: 20px;
+    } 
+
+    main {
+        margin: auto;
+    }
+
+    .sectionPic {
+        width: 90%;
+    }
+
+    .button {
+        padding: 5px 10px;
+        font-size: 16px;
+    }
+    .about-image {
+        width: 240px;
+        border: 3px solid  #FFCFCF;
+    }
+
+    .contact-links a {
+        font-size: 18px;
+    }
+    
+    footer p {
+        font-size: 16px;
+    }
+
+    .contact-icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    #top-button {
+        width: 25px;
+        height: 25px;
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .resume-icon {
+        width: 20px;
+    }
+
+    #myprofile {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /*i asked ChatGPT to help me get my sectionPic to go above my text and learned that order -1 was key to make it format this way*/
+    .sectionPic {
+        width: 80%;
+        margin-bottom: 20px;
+        order: -1;
+    }
+
+    .sectionText {
+        width: 100%;
+        text-align: center;
+    }
+    
+}
